@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.explore.nmerp.voteme.Userdetails">
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/resultBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result"
+            android:visibility="gone"
+            android:onClick="getResult"
+            android:layout_gravity="center"
+            />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:id="@+id/cardView"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="13dp">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="90dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginLeft="0dp"
+            android:layout_height="90dp"
+             />
+    </android.support.v7.widget.CardView>
+    <TextView
+       android:layout_gravity="center"
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        />
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/mob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            />
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="310dp"
+            android:layout_gravity="center"
+
+            android:background="@drawable/userholder"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="60dp">
+
+                <TextView
+                    android:id="@+id/nid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="73dp"
+                    android:layout_toEndOf="@+id/nidholder"
+
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/nidholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/nid"
+                    android:layout_alignBottom="@+id/nid"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="26dp"
+                    android:text="Nid :"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp">
+
+                <TextView
+                    android:id="@+id/fnameholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="23dp"
+                    android:text="Father's Name"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/fname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_toEndOf="@+id/fnameholder"
+
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/mnameholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="24dp"
+                    android:text="Mother's Name"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/mname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_toEndOf="@+id/mnameholder"
+
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp">
+
+                <TextView
+                    android:id="@+id/dobholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="26dp"
+                    android:text="Date of Birth"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="28dp"
+                    android:layout_toEndOf="@+id/dobholder"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_marginBottom="20dp"
+    android:layout_height="wrap_content">
+
+
+    <Button
+        android:gravity="center"
+        android:background="@drawable/buttonshape"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:layout_width="200dp"
+        android:textSize="16sp"
+        android:layout_height="50dp"
+        android:onClick="showMember"
+        android:id="@+id/button5"
+        android:text="Member List" />
+
+</LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

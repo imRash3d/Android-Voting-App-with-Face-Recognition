@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Home"
+        android:id="@+id/menu_home"
+       android:orderInCategory="200"
+
+        app:showAsAction="never">
+
+    </item>
+    <item android:title="Change Password"
+        android:id="@+id/menu_password"
+        android:orderInCategory="200"
+
+        app:showAsAction="never">
+
+    </item>
+    <item android:title="Change Mobile"
+        android:id="@+id/menu_mobile"
+        android:orderInCategory="200"
+
+        app:showAsAction="never">
+
+    </item>
+
+    <item android:title="Exit"
+        android:id="@+id/menu_exit"
+        android:orderInCategory="200"
+
+        app:showAsAction="never">
+
+    </item>
+</menu>

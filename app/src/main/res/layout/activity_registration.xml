@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbg"
+    tools:context="com.explore.nmerp.voteme.RegistrationActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+        android:background="@drawable/singinlogbg"
+        android:id="@+id/imageView" />
+    <EditText
+        android:id="@+id/nid"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nidbg"
+        android:layout_marginTop="177dp"
+        android:hint="Nid Card No "
+        android:paddingLeft="30sp"
+        android:maxLength="10"
+        android:textSize="15sp"
+        android:inputType="number"
+        android:paddingBottom="12sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:id="@+id/mob"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mobbg"
+        android:hint="Mobile Number "
+        android:paddingLeft="30sp"
+        android:inputType="number"
+        android:maxLength="11"
+        android:textSize="15sp"
+        android:paddingBottom="12sp"
+        android:layout_marginTop="38dp"
+        android:layout_below="@+id/nid"
+        android:layout_alignStart="@+id/nid" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/passbg"
+        android:layout_marginTop="43dp"
+        android:hint="Password "
+        android:paddingLeft="30sp"
+        android:inputType="textPassword"
+        android:textSize="15sp"
+        android:paddingBottom="12sp"
+        android:layout_below="@+id/mob"
+        android:layout_alignStart="@+id/mob" />
+
+    <Button
+        android:onClick="is_reg"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:background="@drawable/signinbg"
+        android:layout_marginBottom="58dp"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

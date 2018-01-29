@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10sp"
+    android:layout_marginBottom="30dp"
+    tools:context="com.explore.nmerp.voteme.MemberList">
+
+
+
+<android.support.v7.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20sp"
+    android:id="@+id/list"
+    android:layout_weight="0.18">
+
+</android.support.v7.widget.RecyclerView>
+
+
+
+    <Button
+        android:id="@+id/voteBtn"
+        android:gravity="center"
+        android:background="@drawable/buttonshape"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:layout_width="190dp"
+        android:textSize="14sp"
+        android:layout_height="45dp"
+        android:text="Start Voting"
+       android:layout_marginBottom="30dp"
+        android:visibility="gone"
+       />
+
+    <Button
+android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:background="@drawable/buttonshape"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:layout_width="190dp"
+        android:textSize="15sp"
+        android:layout_height="45dp"
+        android:text="clear"
+        android:visibility="visible"
+        android:onClick="clear"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/button4"
+         />
+</LinearLayout>
+</ScrollView>

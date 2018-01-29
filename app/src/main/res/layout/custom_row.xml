@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="10sp"
+    android:layout_marginBottom="0sp"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        card_view:cardBackgroundColor="#fff">
+
+<ImageView
+    android:id="@+id/memberimg"
+    android:layout_width="70dp"
+    android:layout_height="70dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5sp"
+    android:src="@drawable/rashed" />
+
+        <TextView
+            android:id="@+id/memberName"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:textSize="17sp"
+            android:textColor="#1b1b1b"
+            android:text="Rashedul Islam " />
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

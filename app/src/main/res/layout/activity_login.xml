@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbg"
+    tools:context="com.explore.nmerp.voteme.LoginActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:src="@drawable/logobg"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/nid"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nidbg"
+        android:layout_marginTop="198dp"
+        android:hint="Nid Card No "
+        android:paddingLeft="30sp"
+        android:textSize="15sp"
+        android:inputType="number"
+        android:maxLength="10"
+        android:paddingBottom="12sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/passbg"
+        android:layout_marginTop="46dp"
+        android:hint="Password "
+        android:paddingLeft="30sp"
+        android:textSize="15sp"
+        android:paddingBottom="12sp"
+        android:layout_below="@+id/nid"
+        android:inputType="textPassword"
+        android:layout_alignStart="@+id/nid" />
+    <Button
+        android:layout_marginBottom="15sp"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:background="@drawable/loginbg"
+        android:layout_marginTop="55dp"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button"
+        android:onClick="login"/>
+    <TextView
+        android:id="@+id/signt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dont Have An Account ?"
+        android:textSize="13sp"
+        android:textColor="#FF6219"
+        android:textStyle="bold"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/button"
+        android:layout_toStartOf="@+id/button2"
+        android:layout_marginEnd="14dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="Sign Up"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#FF6219"
+        android:id="@+id/button2"
+        android:onClick="registration"
+        android:layout_alignTop="@+id/signt"
+        android:layout_alignEnd="@+id/password"
+        android:layout_marginEnd="31dp" />
+
+</RelativeLayout>

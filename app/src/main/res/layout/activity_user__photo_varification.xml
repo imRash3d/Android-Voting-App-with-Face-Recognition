@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.explore.nmerp.voteme.User_Photo_varification">
+
+
+    <LinearLayout
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imgIV"
+            android:layout_width="150dp"
+            android:layout_weight="1"
+            android:layout_height="150dp"
+
+            android:scaleType="centerCrop" />
+        <ImageView
+            android:id="@+id/imgIV2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop" />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/text1"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Take Photo"
+        android:onClick="addImg"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:id="@+id/varifyBtn"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="varefy"
+        android:visibility="gone"
+        android:text="Phone Varefication "
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/result"
+        />
+</LinearLayout>

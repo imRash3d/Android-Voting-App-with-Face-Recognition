@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout_name"
+    tools:context="com.explore.nmerp.voteme.Selectmemberlayout">
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="43dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/radio_group">
+
+<RadioButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Golam Kibria (Hira)"
+    android:padding="10sp"
+    android:onClick="selectmember"
+    android:layout_margin="10sp"
+    android:id="@+id/member1"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alhaz Motiur Rahman"
+            android:onClick="selectmember"
+            android:padding="10sp"
+            android:layout_margin="10sp"
+            android:id="@+id/member3"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Md. Mohiuddin Alam"
+            android:padding="10sp"
+            android:onClick="selectmember"
+            android:layout_margin="10sp"
+            android:id="@+id/member2"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Md. Anawarul Azam"
+            android:onClick="selectmember"
+            android:padding="10sp"
+            android:layout_margin="10sp"
+            android:id="@+id/member4"/>
+    </RadioGroup>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btntext"/>
+    <Button
+        android:id="@+id/submitBtn"
+
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:background="@drawable/buttonshape"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:layout_width="200dp"
+        android:textSize="16sp"
+        android:layout_height="50dp"
+        android:onClick="submitVote"
+        android:text="Submit"
+        />
+
+</LinearLayout>

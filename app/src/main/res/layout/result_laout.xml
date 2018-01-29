@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+    android:layout_margin="20dp"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:textSize="17dp"
+           android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/member_name" />
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+
+        android:id="@+id/total_vote"
+        android:layout_width="100dp"
+
+        android:layout_height="20dp"
+        android:text="Total Vote" />
+    <TextView
+
+        android:id="@+id/vote_show"
+        android:layout_width="match_parent"
+        android:textSize="17sp"
+        android:layout_height="20dp"
+        android:text="Total "
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/total_vote" />
+</RelativeLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
